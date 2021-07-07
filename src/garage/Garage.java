@@ -3,42 +3,44 @@ package garage;
 import java.util.ArrayList;
 
 public class Garage {
+
 //create vehicle lists
-	public ArrayList<Car> cars = new ArrayList<>();
-	public ArrayList<Tractor> tractors = new ArrayList<>();
-	public ArrayList<Snowplough> snowPloughs = new ArrayList<>();
-	private Garage[] vehicle;
+	ArrayList<Vehicle> vehicles = new ArrayList<>();
 
-	// add and remove vehicles
-	public void addCar(Car car) {
-		this.cars.add(car);
+	public void addVehicle(Vehicle vehicle) {
+		this.vehicles.add(vehicle);
 	}
 
-	public void removeCar(Car car) {
-		this.cars.remove(car);
+	public void removeVehicle(Vehicle vehicle) {
+		this.vehicles.remove(vehicle);
 	}
 
-	public void addTractor(Tractor tractor) {
-		this.tractors.add(tractor);
+	public void print() {
+		for (Vehicle v : this.vehicles) {
+			v.print();
+
+		}
 	}
 
-	public void removeTractor(Tractor tractor) {
-		this.tractors.remove(tractor);
+	// repair cost
+
+	public double repairCost() {
+		for (Vehicle vehicle : vehicles) {
+			double bill = 0 + repairCost();
+			return bill;
+
+		}
+		return 0.0;
+
 	}
 
-	public void addSnowplough(Snowplough snowPlough) {
-		this.snowPloughs.add(snowPlough);
-	}
+//find by
+	public void removeType(String model) {
+		for (int i = 0; i < vehicles.size(); i++) {
+			if (vehicles.get(i).getModel() == model) {
+				this.vehicles.remove(vehicles.get(i));
 
-	public void removeSnowplough(Snowplough snowPlough) {
-		this.snowPloughs.remove(snowPlough);
-	}
-	// create find by type fuction
-
-	public Garage[] findByType(String name) {
-		for (Garage type : this.vehicle) {
-			if (vehicle.name == name) {
-				return vehicle;
+			} else {
 			}
 		}
 	}

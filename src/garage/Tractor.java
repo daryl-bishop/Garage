@@ -19,4 +19,10 @@ public class Tractor extends Vehicle {
 	public void setTowWeight(int towWeight) {
 		this.towWeight = towWeight;
 	}
+
+	// repair cost
+	public double repairCost() {
+		return 40.00;
+
+	}
 }

@@ -20,4 +20,9 @@ public class Car extends Vehicle {
 	public void setNumberOfDoors(int numberOfDoors) {
 		this.numberOfDoors = numberOfDoors;
 	}
+
+	// repair cost
+	public double repairCost() {
+		return 90.00;
+	}
 }

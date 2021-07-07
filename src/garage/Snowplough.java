@@ -21,4 +21,8 @@ public class Snowplough extends Vehicle {
 		this.ploughDepth = towWeight;
 	}
 
+	// repair cost
+	public double repairCost() {
+		return 50.00;
+	}
 }
